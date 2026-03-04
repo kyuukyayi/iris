@@ -24,21 +24,21 @@ value = 5.1
 )
 
 sepal_width = form.number_input(
-	"sepal_length (cm)",
+	"sepal_width (cm)",
 min_value = 1.0,
 max_value = 7.0,
 value = 5.0
 )
 
 petal_length = form.number_input(
-	"sepal_length (cm)",
+	"petal_length (cm)",
 min_value = 1.0,
 max_value = 7.0,
 value = 5.0
 )
 
 petal_width = form.number_input(
-	"sepal_length (cm)",
+	"petal_width (cm)",
 min_value = 1.0,
 max_value = 2.5,
 value = 0.2
@@ -60,6 +60,7 @@ if submit_button:
 
 	st.subheader("Prediction Result")
 	st.success(f"Predicted species: {prediction[0]}")
-	submitted = st.form_submit_button("Submit")
+	
+
 
 
