@@ -60,7 +60,8 @@ if submit_button:
 
 	st.subheader("Prediction Result")
 	st.success(f"Predicted species: {prediction[0]}")
-	
+	submitted = st.form_submit_button("Submit")
+
 
 
 
