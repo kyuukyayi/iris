@@ -47,6 +47,7 @@ value = 0.2
 
 submit_button = form.form_submit_button("Predict")
 
+
 if submit_button:
 	input_data = pd.DataFrame({
 		"sepal_length (cm)": [sepal_length],
@@ -59,4 +60,6 @@ if submit_button:
 
 	st.subheader("Prediction Result")
 	st.success(f"Predicted species: {prediction[0]}")
+	st.form_submit_button()
+
 
